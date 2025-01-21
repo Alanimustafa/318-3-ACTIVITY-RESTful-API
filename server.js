@@ -1,6 +1,11 @@
+// Requireing the express server
 const express = require('express');
+
+// Creating the Express server applicatoin
 const app = express();
-const PORT = 3000 ;
+
+// Creating the PORT constant and assign the process environment or a default PORT# 3000
+const PORT = process.env.PORT || 3000 ;
 
 const users = require('./data/users.js');
 const posts = require('./data/posts.js');
